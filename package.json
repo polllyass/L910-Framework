@@ -1,0 +1,13 @@
+{
+  "name": "l910-framework",
+  "version": "1.0.0",
+  "description": "Театральная афиша - минималистичный веб-фреймворк",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["framework", "nodejs", "theater"],
+  "author": "",
+  "license": "ISC"
+}

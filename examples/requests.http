@@ -1,0 +1,31 @@
+GET http://localhost:3000/tickets
+GET http://localhost:3000/tickets/1
+POST http://localhost:3000/tickets
+Content-Type: application/json
+{
+  "playId": 1,
+  "seat": "C10",
+  "price": 1800,
+  "seatType": "vip"
+}
+PUT http://localhost:3000/tickets/1
+Content-Type: application/json
+{
+  "playId": 1,
+  "seat": "A12",
+  "price": 2000,
+  "isSold": true,
+  "buyerName": "Полина Ярошевич"
+}
+PATCH http://localhost:3000/tickets/1
+Content-Type: application/json
+{
+  "price": 1700
+}
+DELETE http://localhost:3000/tickets/1
+POST http://localhost:3000/tickets/1/buy
+Content-Type: application/json
+{
+  "buyerName": "Полина Ярошевич",
+  "paymentMethod": "card"
+}

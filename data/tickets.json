@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "playId": 1,
+    "seat": "A12",
+    "price": 1500,
+    "isSold": false,
+    "buyerName": "",
+    "purchaseDate": null,
+    "paymentMethod": "",
+    "seatType": "parterre",
+    "discount": 0,
+    "reservedUntil": null
+  },
+  {
+    "id": 2,
+    "playId": 1,
+    "seat": "A13",
+    "price": 1500,
+    "isSold": true,
+    "buyerName": "Мария Петрова",
+    "purchaseDate": "2024-01-15T14:30:00Z",
+    "paymentMethod": "card",
+    "seatType": "parterre",
+    "discount": 10,
+    "reservedUntil": null
+  },
+  {
+    "id": 3,
+    "playId": 2,
+    "seat": "B5",
+    "price": 1200,
+    "isSold": false,
+    "buyerName": "",
+    "purchaseDate": null,
+    "paymentMethod": "",
+    "seatType": "balcony",
+    "discount": 0,
+    "reservedUntil": null
+  }
+]
