@@ -21,7 +21,6 @@ function post(path, handler) {
 function put(path, handler) {
   routes.PUT[path] = handler;
 }
-
 function patch(path, handler) {
   routes.PATCH[path] = handler;
 }
