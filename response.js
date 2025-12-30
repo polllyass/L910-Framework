@@ -28,4 +28,5 @@ class Response {
     this.res.end(JSON.stringify(data));
   }
 }
+
 module.exports = Response;
