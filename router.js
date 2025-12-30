@@ -9,13 +9,9 @@ class Router {
         };
         this.notFoundHandler = this.defaultNotFoundHandler;
     }
-
-    // Пользовательский обработчик 404
     setNotFoundHandler(handler) {
         this.notFoundHandler = handler;
     }
-
-    // Обработчик 404 по умолчанию
     defaultNotFoundHandler(req, res) {
         res.status(404).json({
             success: false,
@@ -104,7 +100,6 @@ class Router {
                 }
             }
         } else {
-            // Маршрут не найден - 404
             this.notFoundHandler(req, res);
         }
     }
