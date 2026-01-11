@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Театральная афиша</title>
+</head>
+<body>
+    <h1>Театральная афиша API</h1>
+    <button onclick="test('/')">Главная</button>
+    <button onclick="test('/tickets')">Все билеты</button>
+    <button onclick="test('/tickets/1')">Билет №1</button>
+    <button onclick="test('/plays')">Все спектакли</button>
+    <button onclick="test('/plays/1')">Спектакль №1</button>
+    <pre id="output"></pre>
+    <script>
+        async function test(url) {
+            const res = await fetch('http://localhost:3000' + url);
+            const data = await res.json();
+            document.getElementById('output').textContent = 
+                `GET ${url}\n\n${JSON.stringify(data, null, 2)}`;
+        }
+    </script>
+</body>
+</html>
